@@ -43,7 +43,7 @@ for (i = 0; l > i; i++) {
     }
 
 }
-// console.log(max);
+console.log(max);
 
 // 4.Konversi angka ke terbilang
 function pembilang(nilai){
@@ -92,4 +92,4 @@ function pembilang(nilai){
     return temp;
 }
 
-console.log(pembilang(12505000));
+// console.log(pembilang(12505000));
