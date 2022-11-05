@@ -1,4 +1,3 @@
-
 function BrokenHeartCount(num){
     let CountBroken=0;
     let CountHeart=0;
@@ -15,13 +14,11 @@ function BrokenHeartCount(num){
             console.log("heart")
         }else{
             console.log(i);
-        }
-        
+        }    
     }
     console.log("broken heart : " +CountBrokenHeart)
     console.log("broken  : " +CountBroken)
-    console.log("heart : " +CountHeart)
- 
+    console.log("heart : " +CountHeart) 
 }
 // test with numer 20
 BrokenHeartCount(20);
