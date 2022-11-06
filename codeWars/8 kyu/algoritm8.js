@@ -41,9 +41,9 @@ function isDivideBy(number, a, b) {
   }
 }
 
-console.log(isDivideBy(20,4,5));
-console.log(isDivideBy(20,6,5));
-console.log(isDivideBy(20,10,5));
+// console.log(isDivideBy(20,4,5));
+// console.log(isDivideBy(20,6,5));
+// console.log(isDivideBy(20,10,5));
 
 // Transportation on vacation
 /*
@@ -59,7 +59,7 @@ function rentalCarCost(d) {
     return total;
   }
 
-  console.log(rentalCarCost(10));
+  // console.log(rentalCarCost(10));
 
 
   // 5-11-22
@@ -104,3 +104,44 @@ function expressionMatter(a, b, c) {
    return Math.max(x1,x2,x3,x4,x5);
    
  }
+
+
+
+//  Summation
+/**
+ * Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0.
+
+For example:
+
+summation(2) -> 3
+1 + 2
+
+summation(8) -> 36
+1 + 2 + 3 + 4 + 5 + 6 + 7 + 8
+ */
+
+var summation = function (num) {
+  // jumlahkan seluruh angka dari 1 sampai num
+  let result=0;
+  for(i=1; i <=num; i++){
+      result+=i;
+  }
+  return result;
+}
+
+console.log(summation(100));
+
+// Reversed Strings
+
+
+/**
+ * Complete the solution so that it reverses the string passed into it.
+
+'world'  =>  'dlrow'
+'word'   =>  'drow'
+ */
+
+function solution(str){
+  return str.split('').reverse().join('');
+}
+const solution = s => [...s].reverse().join('')
