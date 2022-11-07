@@ -1,20 +1,19 @@
 // Hello, Name or World!
-/*function hello(name){
+function hello(name){
     return `Hello, ${name ? name[0].toUpperCase() + name.slice(1).toLowerCase() : "World"}!`
 }
 
-console.log(hello("Melsi"));
-console.log(hello("MuRsHmA"));
-*/
+// console.log(hello("Melsi"));
+// console.log(hello("MuRsHmA"));
 
 // 21otk 7:56
 // Beginner Series #2 Clock
 
-// function past(h, m, s){
-//     return (3600 * h + 60 * m + s) * 1000;
-//   }
+function past(h, m, s){
+    return (3600 * h + 60 * m + s) * 1000;
+  }
 
-/*const past = (h, m, s) => 1000 * (3600 * h + 60 * m + s);
+const past = (h, m, s) => 1000 * (3600 * h + 60 * m + s);
 
 function past(h, m, s){
   var hours = h * 60 * 60 * 1000;
@@ -23,13 +22,13 @@ function past(h, m, s){
   
   return hours + minutes + seconds;
 }
-console.log(past(0, 1, 1), 61000)
-console.log(past(1, 1, 1), 3661000)
-console.log(past(0, 0, 0), 0)
-console.log(past(1, 0, 1), 3601000)
-console.log(past(1, 0, 0), 3600000)
+// console.log(past(0, 1, 1), 61000)
+// console.log(past(1, 1, 1), 3661000)
+// console.log(past(0, 0, 0), 0)
+// console.log(past(1, 0, 1), 3601000)
+// console.log(past(1, 0, 0), 3600000)
 
-*/
+
 
 // can we divide it?
 
@@ -129,7 +128,7 @@ var summation = function (num) {
   return result;
 }
 
-console.log(summation(100));
+// console.log(summation(100));
 
 // Reversed Strings
 
@@ -141,7 +140,50 @@ console.log(summation(100));
 'word'   =>  'drow'
  */
 
-function solution(str){
-  return str.split('').reverse().join('');
+// function solution(str){
+//   return str.split('').reverse().join('');
+// }
+const solution = s => [...s].reverse().join('');
+// console.log(solution("Melsy"));
+
+// 7nov22
+
+// Counting sheep...
+/**
+ * Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
+
+For example,
+
+[true,  true,  true,  false,
+  true,  true,  true,  true ,
+  true,  false, true,  false,
+  true,  false, false, true ,
+  true,  true,  true,  true ,
+  false, false, true,  true]
+The correct answer would be 17.
+
+Hint: Don't forget to check for bad values like null/undefined
+ */
+function countSheeps(arrayOfSheep) {
+  let sum=0;
+  for(i=0; i<arrayOfSheep.length; i++){
+    if(arrayOfSheep[i]=== true){
+      sum+=1;
+    }
+  }
+  return sum;
 }
-const solution = s => [...s].reverse().join('')
+
+function countSheeps(arrayOfSheeps) {
+  return arrayOfSheeps.filter(Boolean).length;
+}
+
+
+var array1 = [true,  true,  true,  false,
+  true,  true,  true,  true ,
+  true,  false, true,  false,
+  true,  false, false, true ,
+  true,  true,  true,  true ,
+  false, false, true,  true ];
+
+  // console.log(countSheeps(array1));
