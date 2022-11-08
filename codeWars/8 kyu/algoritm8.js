@@ -187,3 +187,99 @@ var array1 = [true,  true,  true,  false,
   false, false, true,  true ];
 
   // console.log(countSheeps(array1));
+
+
+  // Convert a String to a Number!
+  /**
+   * DESCRIPTION:
+Note: This kata is inspired by Convert a Number to a String!. Try that one too.
+
+Description
+We need a function that can transform a string into a number. What ways of achieving this do you know?
+
+Note: Don't worry, all inputs will be strings, and every string is a perfectly valid representation of an integral number.
+
+Examples
+"1234" --> 1234
+"605"  --> 605
+"1405" --> 1405
+"-7" --> -7
+   */
+
+const stringToNumber = function(str){
+  // put your code here
+  return parseInt(str);
+}
+
+
+// String repeat
+/**
+ * Write a function that accepts an integer n and a string s as parameters, and returns a string of s repeated exactly n times.
+
+Examples (input -> output)
+6, "I"     -> "IIIIII"
+5, "Hello" -> "HelloHelloHelloHelloHello"
+ */
+
+function repeatStr (n, s) {
+  let result =s.repeat(n);
+  return result;
+}
+
+function repeatStr (n, s) {
+  var str="";
+  for(var i=0; i < n; i++)
+    str+=s;
+    return str;
+  }
+
+  // Will you make it?
+  /**
+   * You were camping with your friends far away from home, but when it's time to go back, you realize that your fuel is running out and the nearest pump is 50 miles away! You know that on average, your car runs on about 25 miles per gallon. There are 2 gallons left.
+
+Considering these factors, write a function that tells you if it is possible to get to the pump or not.
+
+Function should return true if it is possible and false if not.
+   */
+
+// const zeroFuel = (distanceToPump, mpg, fuelLeft) => distanceToPump <= mpg * fuelLeft ? true : false
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  if (mpg*fuelLeft >= distanceToPump) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+// Grasshopper - Basic Function Fixer
+/**
+ * Fix the function
+I created this function to add five to any number that was passed in to it and return the new value. It doesn't throw any errors but it returns the wrong number.
+
+Can you help me fix the function?
+ */
+
+function addFive(num) {
+  var total = num + 5
+  return total;
+}
+
+
+// Beginner - Reduce but Grow
+/**
+ * Given a non-empty array of integers, return the result of multiplying the values together in order. Example:
+
+[1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
+ */
+
+function grow(x) {
+  return x.reduce((a, b) => a * b);
+}
+
+const grow = x => {
+  let res = 1;
+  for (let i = 0; i < x.length; i++) {
+    res *= x[i];
+  }
+  return res;
+};

@@ -11,5 +11,16 @@ for(var i=0; i<max-1; i++){
     }
 }
 
-console.log(result)
-console.log(array);
+// console.log(result)
+// console.log(array);
+
+function simpleArraySum(ar) {
+    let result=0;
+    for(let i=0; i <=ar.length; i++){
+        result+=i;
+    }
+    return result;
+
+}
+
+console.log(simpleArraySum([1,2,3,4,5,6]));
