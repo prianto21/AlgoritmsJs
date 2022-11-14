@@ -8,5 +8,14 @@ function hitung(num){
     return result
 }
 
-console.log(hitung(15));
+// console.log(hitung(15));
 // console.log(hitung(2021));
+
+function count(num){
+    for(i=1;i<=num; i++){
+        if(i<=8 || i>=2){
+            console.log(i)
+        }
+    }
+}
+count(8);
