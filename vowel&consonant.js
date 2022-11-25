@@ -27,9 +27,9 @@ const vowelsAndconsonants = str => {
     //pluck vowels
     const vowels_final=str_array.filter( a => vowels.includes(a.toLowerCase()));
     //pluck consonants
-    const consonant_final=str_array.filter( a => !vowels.includes(a.toLowerCase()));
+    // const consonant_final=str_array.filter( a => !vowels.includes(a.toLowerCase()));
   //to print any vowels from a word on a new line and then consonant in the order they appear. 
-    return   vowels_final.join('') + " " + '\n' + consonant_final.join('').toLowerCase();
+    return   vowels_final.join('') ;
   }
   
   // console.log(vowelsAndconsonants('tEstOnlY and nothing else'))
